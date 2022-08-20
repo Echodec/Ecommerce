@@ -1,0 +1,38 @@
+@import url(./global-style.css);
+
+/*Codigo especifico de la pagina*/
+header{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 5rem;
+}
+
+header a{
+    padding: 1rem 0;
+    width: 100%;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    transition: .3s ease-out;
+}
+
+.inactive:hover{
+    background-color: #44056e
+}
+
+.active{
+    background-color: var(--bg-body);
+}
+
+p{
+    color: var(--text-body);
+}
+
+.recuperacion{
+    color: #0C8CE9;
+    transition: .3s ease-out;
+}
+
+.recuperacion:hover{
+    color: var(--text-body);
+}

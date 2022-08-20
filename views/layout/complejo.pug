@@ -1,0 +1,93 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/complejos-style.css')
+
+    body 
+        header.contenedor
+            a(href='http://localhost:3000')
+                h1.nombre-sitio Cine-Sistemas
+            .barra-busqueda
+                form(action='')
+                    input.input-busqueda(type='text' name='contenido-busqueda' placeholder='Buscar pelicula' id='')
+                    input.btn-prim(type='submit' value='Buscar')
+            .auth
+                a.btn-prim(href='http://localhost:3000/login') Iniciar Sesi&oacute;n
+
+        nav.nav-principal.contenedor
+            a.btn-prim(href='http://localhost:3000/cartelera') Cartelera
+            a.btn-prim(href='http://localhost:3000/preventa') Pre-venta
+            a.btn-prim(href='http://localhost:3000/complejos') Complejos
+            a.btn-prim(href='http://localhost:3000/promociones') Promociones
+            a.btn-prim(href='http://localhost:3000/proximamente') Proximamente
+            a.btn-prim(href='http://localhost:3000/contacto') Contacto
+
+        h2.text-center Complejos
+        main.contenedor
+            .panel.grid-complejos
+                div
+                    select(name='' id='')
+                        option(value='0') Santa Rosa de Cop&aacute;n
+                    br
+                    img(src='/images/complejo-santarosa.png' alt='Santa Rosa')
+                div
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1928.868050746023!2d-88.7799639!3d14.7838889!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps%20metrocinemas%20santa%20rosa%20de%20copan!5e0!3m2!1ses-419!2shn!4v1660327262846!5m2!1ses-419!2shn' width='500' height='350' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+                    p
+                        b Direccion:
+                        | Mall Uniplaza, Santa Rosa de Cop&aacute;n
+                    p
+                        b Formatos de Sala:
+                        |  2D Digital y 3D Digital    
+
+
+
+        footer.site-footer.contenedor
+            .grid-redes
+                a.red(href='https://www.facebook.com/search/top/?q=cinesistemassrc' target='_blank')
+                    img(src='/images/logo-facebook.png' alt='Facebook')
+                    |  Facebook
+                    span CineSistemasSRC
+                a.red(href='https://twitter.com/search?q=cinesistemas%20src' target='_blank')
+                    img(src='/images/logo-twitter.png' alt='Twitter')
+                    |  Twitter
+                    span CineSistemasSRC
+                a.red(href='https://www.instagram.com/cinesistemassrc/' target='_blank')
+                    img(src='/images/logo-instagram.png' alt='Instagram')
+                    |  Instagram
+                    span CineSistemasSRC
+            .grid-footer
+                div
+                    h3 Programaci&oacute;n
+                    nav.footer-menu
+                        a(href='./cartelera.html#cartelera') Cartelera
+                        a(href='./proximamente.html#proximamente') Proximamente
+                        a(href='./preventa.html#preventa') Preventa
+                div
+                    h3 Sobre Cine-Sistemas
+                    nav.footer-menu
+                        a(href='javascript:void(0);') Quienes somos
+                        a(href='javascript:void(0);') Formatos y Salas
+                        a(href='javascript:void(0);') Terminos y condiciones
+                div
+                    h3 Publicidad y eventos
+                    nav.footer-menu
+                        a(href='javascript:void(0);') Eventos privados
+                        a(href='javascript:void(0);') Ventas empresariales
+                        a(href='javascript:void(0);') Publicidad
+                div
+                    h3 Cont&aacute;ctenos
+                    nav.footer-menu
+                        a(href='./contact.html#sugerencias') Escribenos
+                        a(href='./contact.html#contratacion') Trabaja con nosotros
+            p.copyright Copyright 2022 - Cine-Sistemas    
+
+        block content4        

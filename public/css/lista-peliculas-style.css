@@ -1,0 +1,39 @@
+@import url(./global-style.css);
+
+/*Codigo especifico de la pagina*/
+h3{
+    margin-top: 2rem;
+}
+
+.panel{
+    margin-bottom: 5rem;
+}
+
+h4{
+    color: var(--text-panel);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-cartelera{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+table{
+    border: 1px solid;
+    margin: 1rem auto;
+    width: 100%;
+    background-color: white;
+}
+
+th, td{
+    height: 4rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.pelicula{
+    width: 55%;
+}

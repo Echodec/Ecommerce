@@ -1,0 +1,83 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/reg-style.css')
+
+    body 
+        header.contenedor
+            a(href='http://localhost:3000')
+                h1.nombre-sitio Cine-Sistemas
+            .barra-busqueda
+                form(action='')
+                    input.input-busqueda(type='text' name='contenido-busqueda' placeholder='Buscar pelicula' id='')
+                    input.btn-prim(type='submit' value='Buscar')
+            .auth
+                a.btn-prim(href='http://localhost:3000/auth/login') Iniciar Sesi&oacute;n
+
+        nav.nav-principal.contenedor
+            a.btn-prim(href='http://localhost:3000/cartelera') Cartelera
+            a.btn-prim(href='http://localhost:3000/preventa') Pre-venta
+            a.btn-prim(href='http://localhost:3000/complejos') Complejos
+            a.btn-prim(href='http://localhost:3000/promociones') Promociones
+            a.btn-prim(href='http://localhost:3000/proximamente') Proximamente
+            a.btn-prim(href='http://localhost:3000/contacto') Contacto
+
+
+        h1.regis Registrarse
+        .flex-inicio
+            a.cine Cine-sistemas
+            a  Ingresar Usuario 
+            a Registrarse
+        .flex-global
+            .flex-Nombre
+                .holder  Nombre 
+                input.controls(type='text' placeholder='')
+            .flex-apellido
+                .holder  apellido
+                input.controls(type='text' placeholder='')
+            .flex-sexo
+                .holder  sexo 
+                input.controls(type='text' placeholder='                                                                                                                                                                                                                                                          ▼')
+            .flex-Telefono
+                .holder Telefono
+                input.controls(type='text' placeholder='')
+            .flex-direccion
+                .holder  direccion
+                input.controls(type='text' placeholder='')
+            .flex-email
+                .holder  E-mail
+                input.controls(type='text' placeholder='')
+            .flex-confirmar
+                .holder  confirmar E-mail
+                input.controls(type='text' placeholder='')
+            .flex-fecha
+                .holder  Fecha de nacimiento
+                input.controls(type='text' placeholder='')
+            .flex-contra
+                .holder  contrase&ntilde;a
+                input.controls(type='text' placeholder='')
+            .flex-confcontra
+                .holder confirmar contrase&ntilde;a
+                input.controls(type='text' placeholder='')
+            .flex-usu
+                .holder  Usuario/correo electronico
+                input.controls(type='text' placeholder='')
+            .flex-pregunta
+                .holder Pregunta de seguridad 
+                input.controls(type='text' placeholder='                                                                                                                                                                                                                                                          ▼')
+            .flex-Respuesta
+                .holder  Respuesta 
+                input.controls2(type='text' placeholder='   ')
+            input.botons-enviar(type='submit' value='Enviar')
+
+        block content11    
+    

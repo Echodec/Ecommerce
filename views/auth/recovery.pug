@@ -1,0 +1,35 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/recovery-style.css')
+
+    body 
+        header.modal-contenedor
+            h2 Recuperaci&oacute;n de Cuenta
+        main.modal-contenedor
+            .panel
+                form(action='')
+                    label(for='') Usuario/Correo Electr&oacute;nico
+                    input(type='text' name='' id='')
+                    br
+                    label(for='') Pregunta de seguridad
+                    select(name='' id='')
+                        option(value='0') Seleccione una pregunta
+                    br
+                    label.text-center(for='') Respuesta
+                    br
+                    textarea(name='' id='' cols='34' rows='5')
+                    br
+                    input.btn-ter(type='submit' value='Enviar')
+                    p#err-recovery.error
+
+        block content10            

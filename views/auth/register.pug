@@ -1,0 +1,39 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/login-style.css')
+
+    body 
+        header.modal-contenedor
+            a.inactive(href='http://localhost:3000/login') Iniciar Sesi&oacute;n
+            a.active(href='http://localhost:3000/regnew') Registrarse
+        main.modal-contenedor
+            .panel
+                form(action='')
+                    label(for='') Usuario
+                    input(type='text' name='' id='')
+                    br
+                    label(for='') Contrase&ntilde;a
+                    input(type='password' name='' id='')
+                    br
+                    input.btn-ter(type='submit' value='Ingresar')
+                    p#err-login.error
+            p
+                | &iquest;Olvid&oacute; su contrase&ntilde;a? Pruebe con las 
+                a.recuperacion(href='http://localhost:3000/recover') Opciones de Recuperaci&oacute;n
+    
+
+//extends ../admin/registrar-pelicula
+
+//block content16
+    div 
+        h2 Crear Cuenta

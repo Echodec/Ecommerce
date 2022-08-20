@@ -1,0 +1,33 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/admin-index-style.css')
+
+    body 
+        header.contenedor
+            a(href='../index.html')
+                h1.nombre-sitio Cine-Sistemas
+            a(href='./index.html')
+                h1.nombre-sitio Portal Empleados
+            .auth
+                a.btn-prim(href='../index.html') Cerrar Sesi&oacute;n
+        main.contenedor
+            h3 Men&uacute; Administrativo
+            .panel
+                a.btn-ter(href='./edit-cartelera.html') Editar Cartelera
+                br
+                a.btn-ter(href='./registrar-pelicula.html') Registrar pelicula
+                br
+                a.btn-ter(href='./lista-peliculas.html') Lista de peliculas registradas
+
+        block content12        
+    

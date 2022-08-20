@@ -1,0 +1,31 @@
+@import url(./global-style.css);
+
+/*Codigo especifico de la pagina*/
+h3{
+    margin-top: 2rem;
+}
+
+.panel{
+    margin-bottom: 5rem;
+}
+
+label{
+    width: 15rem;
+}
+
+.flex-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-poster{
+    background-color: white;
+    width: 40rem;
+    height: 60rem;
+}
+
+input[type="file"]{
+    width: auto;
+}
+

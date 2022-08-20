@@ -1,0 +1,98 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/proximamente-style.css')
+
+    body 
+        header.contenedor
+            a(href='http://localhost:3000')
+                h1.nombre-sitio Cine-Sistemas
+            .barra-busqueda
+                form(action='')
+                    input.input-busqueda(type='text' name='contenido-busqueda' placeholder='Buscar pelicula' id='')
+                    input.btn-prim(type='submit' value='Buscar')
+            .auth
+                a.btn-prim(href='http://localhost:3000/login') Iniciar Sesi&oacute;n
+
+        nav.nav-principal.contenedor
+            a.btn-prim(href='http://localhost:3000/cartelera') Cartelera
+            a.btn-prim(href='http://localhost:3000/preventa') Pre-venta
+            a.btn-prim(href='http://localhost:3000/complejos') Complejos
+            a.btn-prim(href='http://localhost:3000/promociones') Promociones
+            a.btn-prim(href='http://localhost:3000/proximamente') Proximamente
+            a.btn-prim(href='http://localhost:3000/contacto') Contacto
+
+        .contenedor.show
+            br
+            h2#proximamente PROXIMAMENTE
+            .grid-show
+                .movie-grid
+                    div
+                        img(src='/images/black-adam-00cx.jpg')
+                    .text-movie
+                        p(style='margin-top: 2rem;') - ESPA&Ntilde;OL
+                        p - TODO PUBLICO
+                        p - ACCION
+                        p - 120 MIN.
+                        p - 2D DIGITAL
+                .movie-grid
+                    div
+                        img(src='/images/puss-in-boots-the-last-wish-poster-thumbnail2.jpg')
+                    .text-movie
+                        p(style='margin-top: 2rem;') - ESPA&Ntilde;OL
+                        p - TODO PUBLICO
+                        p - ACCION
+                        p - 120 MIN.
+                        p - 2D DIGITAL    
+
+
+        footer.site-footer.contenedor
+            .grid-redes
+                a.red(href='https://www.facebook.com/search/top/?q=cinesistemassrc' target='_blank')
+                    img(src='/images/logo-facebook.png' alt='Facebook')
+                    |  Facebook
+                    span CineSistemasSRC
+                a.red(href='https://twitter.com/search?q=cinesistemas%20src' target='_blank')
+                    img(src='/images/logo-twitter.png' alt='Twitter')
+                    |  Twitter
+                    span CineSistemasSRC
+                a.red(href='https://www.instagram.com/cinesistemassrc/' target='_blank')
+                    img(src='/images/logo-instagram.png' alt='Instagram')
+                    |  Instagram
+                    span CineSistemasSRC
+            .grid-footer
+                div
+                    h3 Programaci&oacute;n
+                    nav.footer-menu
+                        a(href='./cartelera.html#cartelera') Cartelera
+                        a(href='./proximamente.html#proximamente') Proximamente
+                        a(href='./preventa.html#preventa') Preventa
+                div
+                    h3 Sobre Cine-Sistemas
+                    nav.footer-menu
+                        a(href='javascript:void(0);') Quienes somos
+                        a(href='javascript:void(0);') Formatos y Salas
+                        a(href='javascript:void(0);') Terminos y condiciones
+                div
+                    h3 Publicidad y eventos
+                    nav.footer-menu
+                        a(href='javascript:void(0);') Eventos privados
+                        a(href='javascript:void(0);') Ventas empresariales
+                        a(href='javascript:void(0);') Publicidad
+                div
+                    h3 Cont&aacute;ctenos
+                    nav.footer-menu
+                        a(href='./contact.html#sugerencias') Escribenos
+                        a(href='./contact.html#contratacion') Trabaja con nosotros
+            p.copyright Copyright 2022 - Cine-Sistemas    
+
+        block content6    

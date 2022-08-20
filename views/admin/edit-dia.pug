@@ -1,0 +1,75 @@
+html(lang='es')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(author='Grupo #1 Diseño de compiladores 2PAC 2022')
+        title Cine-Sistemas
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='/css/global-style.css')
+        link(rel='stylesheet' href='/css/edit-dia-style.css')
+
+    body 
+        header.modal-contenedor
+            h2 Editar cartelera - Dia
+        main.modal-contenedor
+            .panel
+                h3 Ubicaci&oacute;n
+                label(for='') Complejo
+                input(type='text' name='' id='' readonly='readonly' value='')
+                br
+                label(for='') Fecha
+                input(type='date' name='' id='' readonly='readonly' value='')
+                br
+                label(for='') Sala
+                input(type='text' name='' id='' readonly='readonly' value='')
+                br
+                h3 Agregar pelicula
+                form(action='')
+                label(for='') Pelicula
+                select(name='' id='')
+                    option(value='0') Seleccione una pelicula
+                br
+                label(for='') Hora Inicio
+                input(type='time' name='' id='')
+                br
+                input.btn-ter(type='submit' value='Agregar')
+                p#err-dia.error
+                h3 Peliculas registradas
+                table
+                    tr
+                        th.pelicula Pelicula
+                        th Hora Inicio
+                        th  
+                    tr
+                        td
+                        td
+                        td
+                            button.btn-ter Eliminar
+                    tr
+                        td
+                        td
+                        td
+                            button.btn-ter Eliminar
+                    tr
+                        td
+                        td
+                        td
+                            button.btn-ter Eliminar
+                    tr
+                        td
+                        td
+                        td
+                            button.btn-ter Eliminar
+                    tr
+                        td
+                        td
+                        td
+                            utton.btn-ter Eliminar
+                a.btn-ter(href='./edit-cartelera.html') Guardar y Salir
+
+        block content14        
+    

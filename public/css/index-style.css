@@ -1,0 +1,87 @@
+@import url(./global-style.css);
+
+/*Contenido Principal*/
+
+.new {
+    background-color: var(--bg-footer);
+    text-align: center;
+}
+
+.new h3 {
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.grid-new {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 35rem;
+    column-gap: 2rem;
+}
+
+.img-vessel {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.movimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h2 {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+.new h2{
+    color: var(--text-body);
+}
+
+.grid-promo {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 35rem;
+    column-gap: 3rem;
+}
+
+.promimg{
+    text-align: center;
+    background-color: var(--bg-panel);
+    color: var(--text-panel);
+    height: 35rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    transition: .3s ease-out;
+}
+
+.promimg:hover{
+    background-color: var(--bg-button-1-hover);
+}
+
+.promimg p {
+    margin: 0;
+}
+
+.promo-head {
+    font-size: 6rem;
+}
+
+.promo-sub {
+    font-size: 4rem;
+}
+
+.promo-body {
+    font-size: 2rem;
+}
+
+.promo-foot {
+    font-size: 6rem;
+}
